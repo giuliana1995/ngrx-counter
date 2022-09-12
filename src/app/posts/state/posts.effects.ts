@@ -29,7 +29,7 @@ import {
   ROUTER_NAVIGATION,
 } from '@ngrx/router-store';
 import { of } from 'rxjs';
-import { dummyAction } from 'src/app/auth/state/auth.actions';
+//import { dummyAction } from 'src/app/auth/state/auth.actions';
 
 @Injectable()
 export class PostsEffects {
@@ -51,7 +51,7 @@ export class PostsEffects {
             })
           );
         }
-        return of(dummyAction());
+        //return of(dummyAction());
       })
     );
   });
@@ -120,7 +120,7 @@ export class PostsEffects {
             })
           );
         }
-        return of(dummyAction());
+        //return of(dummyAction());
       })
     );
   });

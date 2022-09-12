@@ -1,4 +1,4 @@
-import { createFeatureSelector, createSelector } from '@ngrx/store';
+/* import { createFeatureSelector, createSelector } from '@ngrx/store';
 import { AuthState } from './auth.state';
 export const AUTH_STATE_NAME = 'auth';
 
@@ -11,3 +11,4 @@ export const isAuthenticated = createSelector(getAuthState, (state) => {
 export const getToken = createSelector(getAuthState, (state) => {
   return state.user ? state.user.userToken : null;
 });
+ */

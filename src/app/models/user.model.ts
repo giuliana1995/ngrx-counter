@@ -1,4 +1,4 @@
-export class User {
+/* export class User {
   constructor(
     private email: string,
     private token: string,
@@ -13,4 +13,4 @@ export class User {
   get userToken() {
     return this.token;
   }
-}
+} */

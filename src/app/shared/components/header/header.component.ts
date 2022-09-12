@@ -1,10 +1,10 @@
 import { AuthService } from './../../../services/auth.service';
-import { isAuthenticated } from './../../../auth/state/auth.selector';
+//import { isAuthenticated } from './../../../auth/state/auth.selector';
 import { Observable } from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { AppState } from 'src/app/store/app.state';
 import { Store } from '@ngrx/store';
-import { autoLogout } from 'src/app/auth/state/auth.actions';
+//import { autoLogout } from 'src/app/auth/state/auth.actions';
 
 @Component({
   selector: 'app-header',
@@ -16,11 +16,11 @@ export class HeaderComponent implements OnInit {
   constructor(private store: Store<AppState>) {}
 
   ngOnInit(): void {
-    this.isAuthenticated = this.store.select(isAuthenticated);
+    //this.isAuthenticated = this.store.select(isAuthenticated);
   }
 
   onLogout(event: Event) {
     event.preventDefault();
-    this.store.dispatch(autoLogout());
+    //this.store.dispatch(autoLogout());
   }
 }

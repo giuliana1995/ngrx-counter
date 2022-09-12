@@ -32,11 +32,11 @@ export class AddPostComponent implements OnInit {
     const descriptionForm = this.postForm.get('description');
     if (descriptionForm.touched && !descriptionForm.valid) {
       if (descriptionForm.errors.required) {
-        return 'Description is required';
+        return 'La descrizione è obbligatoria';
       }
 
       if (descriptionForm.errors.minlength) {
-        return 'Description should be of minimum 10 characters length';
+        return 'la descrizione deve avere minimo 10 caratteri';
       }
     }
   }
